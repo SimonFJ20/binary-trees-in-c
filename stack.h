@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-typedef struct _stack
+typedef struct
 {
     size_t index;
     size_t maxsize;
@@ -11,8 +11,9 @@ typedef struct _stack
 }
 Stack;
 
-Stack*  newStack(size_t maxsize);
+Stack*  stack_new(size_t maxsize);
 void*   stack_free(Stack* s);
+
 size_t  stack_length(Stack* s);
 int     stack_can_push(Stack* s);
 int     stack_can_pop(Stack* s);

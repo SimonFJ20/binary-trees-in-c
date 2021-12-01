@@ -3,7 +3,7 @@
 
 #include "stack.h"
 
-Stack* newStack(size_t maxsize)
+Stack* stack_new(size_t maxsize)
 {
     assert(maxsize > 0 && "maxsize too smol");
     Stack* s = (Stack *) malloc(sizeof(Stack));
