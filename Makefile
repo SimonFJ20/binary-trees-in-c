@@ -1,11 +1,11 @@
 
 CC=gcc
-CFLAGS=-Wall -Werror
+CFLAGS=-I. -Wall -Werror
 LFLAGS=
 
-program: main.o
+program: main.o stack.o
 	$(CC) $(CFLAGS) $(LFLAGS) $^ -o $@ 
-	$(RM) $<
+	$(RM) $^
 
-main.o: main.c
+main.o: main.c stack.c
 	$(CC) -c $(CFLAGS) $< -o $@
