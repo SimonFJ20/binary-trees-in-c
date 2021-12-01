@@ -90,7 +90,7 @@ void print_node(Node* n, int depth)
 }
 
 /*
-same thing expressed in Norsk
+same thing expressed in Python
 
 def sfj_stringifyNode(node: Node, lines: List[str], prefix: str = ''):
     if node.right:
